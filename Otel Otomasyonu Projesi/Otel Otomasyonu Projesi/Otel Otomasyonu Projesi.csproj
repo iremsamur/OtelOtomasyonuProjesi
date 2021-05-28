@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00B9C953-D7C0-470C-854B-015BBB9DACE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Otel_Otomasyonu_Projesi</RootNamespace>
+    <AssemblyName>Otel Otomasyonu Projesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="AdminGirisi.cs" />
+    <Compile Include="FaturaIslemleri.cs" />
+    <Compile Include="FormAdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminGiris.Designer.cs">
+      <DependentUpon>FormAdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnaSayfa.Designer.cs">
+      <DependentUpon>FormAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAyrintilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAyrintilar.Designer.cs">
+      <DependentUpon>FormAyrintilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFaturalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFaturalar.Designer.cs">
+      <DependentUpon>FormFaturalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGazeteler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGazeteler.Designer.cs">
+      <DependentUpon>FormGazeteler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGelirGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGelirGider.Designer.cs">
+      <DependentUpon>FormGelirGider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHakkimizda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHakkimizda.Designer.cs">
+      <DependentUpon>FormHakkimizda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHavaDurumu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHavaDurumu.Designer.cs">
+      <DependentUpon>FormHavaDurumu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIstatistikselVeriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIstatistikselVeriler.Designer.cs">
+      <DependentUpon>FormIstatistikselVeriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMesajlar.Designer.cs">
+      <DependentUpon>FormMesajlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteriler.Designer.cs">
+      <DependentUpon>FormMusteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOtelUcretlendirmeBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOtelUcretlendirmeBilgi.Designer.cs">
+      <DependentUpon>FormOtelUcretlendirmeBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormParolaKullaniciAdiDegisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormParolaKullaniciAdiDegisim.Designer.cs">
+      <DependentUpon>FormParolaKullaniciAdiDegisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRadyoDinle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRadyoDinle.Designer.cs">
+      <DependentUpon>FormRadyoDinle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStok.Designer.cs">
+      <DependentUpon>FormStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYeniMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYeniMusteri.Designer.cs">
+      <DependentUpon>FormYeniMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOdalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOdalar.Designer.cs">
+      <DependentUpon>FormOdalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelirGiderIslemleri.cs" />
+    <Compile Include="Mesajlar.cs" />
+    <Compile Include="Musteri.cs" />
+    <Compile Include="MusteriIslemleri.cs" />
+    <Compile Include="MutfakUrunIslemleri.cs" />
+    <Compile Include="Odalar.cs" />
+    <Compile Include="OdaUrunIslemleri.cs" />
+    <Compile Include="FormPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonel.Designer.cs">
+      <DependentUpon>FormPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtelOtomasyonuDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelOtomasyonuDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelIslemleri.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="VeritabaniBaglanti.cs" />
+    <Compile Include="YeniSifreEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniSifreEkrani.Designer.cs">
+      <DependentUpon>YeniSifreEkrani.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAdminGiris.resx">
+      <DependentUpon>FormAdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAnaSayfa.resx">
+      <DependentUpon>FormAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAyrintilar.resx">
+      <DependentUpon>FormAyrintilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFaturalar.resx">
+      <DependentUpon>FormFaturalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGazeteler.resx">
+      <DependentUpon>FormGazeteler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGelirGider.resx">
+      <DependentUpon>FormGelirGider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHakkimizda.resx">
+      <DependentUpon>FormHakkimizda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHavaDurumu.resx">
+      <DependentUpon>FormHavaDurumu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIstatistikselVeriler.resx">
+      <DependentUpon>FormIstatistikselVeriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMesajlar.resx">
+      <DependentUpon>FormMesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusteriler.resx">
+      <DependentUpon>FormMusteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOtelUcretlendirmeBilgi.resx">
+      <DependentUpon>FormOtelUcretlendirmeBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormParolaKullaniciAdiDegisim.resx">
+      <DependentUpon>FormParolaKullaniciAdiDegisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonel.resx">
+      <DependentUpon>FormPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRadyoDinle.resx">
+      <DependentUpon>FormRadyoDinle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStok.resx">
+      <DependentUpon>FormStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYeniMusteri.resx">
+      <DependentUpon>FormYeniMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOdalar.resx">
+      <DependentUpon>FormOdalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="YeniSifreEkrani.resx">
+      <DependentUpon>YeniSifreEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OtelOtomasyonuDatabaseDataSet.xsc">
+      <DependentUpon>OtelOtomasyonuDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OtelOtomasyonuDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelOtomasyonuDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelOtomasyonuDatabaseDataSet.xss">
+      <DependentUpon>OtelOtomasyonuDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
